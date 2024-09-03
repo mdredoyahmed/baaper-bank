@@ -3,7 +3,7 @@ document.getElementById('btn-submit').addEventListener('click',function(){
    // step2: get the emile address inside the emaile inpute filed 
    // always remember to use .value to get text from an input field
    const emailField = document.getElementById('user-emile');
-   const email = emailField.Value;
+   const email = emailField.value;
 
    //step 3 : 
    // get password 
@@ -12,17 +12,20 @@ document.getElementById('btn-submit').addEventListener('click',function(){
    // get the value form the element 
 
    const passwordField =  document.getElementById('user-password');
-    const password = passwordField.Value;
+    const password = passwordField.value;
 
 
-
+    console.log(email)
+    console.log(passwordField)
 //Dnger : donot veryfy email password on the client side 
 //step 4 : veryfy emil and password 
-if(email==='sonaton@gmail.com' && password ==='secret'){
-    console.log('vaild user')
+
+if(email === 'sontan@bap.com' && password ==='secret'){
+    window.location.href='js/bank.html';
+   
 }
 else{
-    console.log('invaild user ')
+    alert('invaild user ');
 }
 
 
