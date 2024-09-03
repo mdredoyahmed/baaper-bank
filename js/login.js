@@ -15,8 +15,7 @@ document.getElementById('btn-submit').addEventListener('click',function(){
     const password = passwordField.value;
 
 
-    console.log(email)
-    console.log(passwordField)
+    
 //Dnger : donot veryfy email password on the client side 
 //step 4 : veryfy emil and password 
 
